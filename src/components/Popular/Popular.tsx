@@ -1,14 +1,8 @@
 import React, { useEffect } from "react";
 import "./Popular.scss";
 import Header from "../../shared/Header/Header";
-import { StoreProps } from "../App/App";
-import { inject, observer } from "mobx-react";
 
-interface Props extends StoreProps {
-
-}
-
-const Popular: React.FC<Props> = (props: Props) => {
+const Popular: React.FC = () => {
 
   useEffect(() => {
 
@@ -26,5 +20,5 @@ const Popular: React.FC<Props> = (props: Props) => {
   );
 };
 
-export default inject('store')(observer(Popular));
+export default Popular;
 
