@@ -5,6 +5,10 @@ import Loader from "../../shared/Loader/Loader";
 import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import { RootStore } from "../../store/RootStore";
 
+export type StoreProps = {
+  store: RootStore;
+};
+
 const Popular = lazy(() => import("../Popular/Popular"));
 const Trending = lazy(() => import("../Trending/Trending"));
 
