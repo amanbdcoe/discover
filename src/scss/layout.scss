@@ -1,0 +1,36 @@
+.main-container {
+  margin-right: 350px;
+  width: calc(100% - 350px);
+  .movie-container {
+    padding: 60px 20px 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .load-more-button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      background: #00a4ff;
+      outline: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.sidebar-container {
+  background: #151515;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  height: 100%;
+  min-width: 350px;
+  width: 350px;
+}

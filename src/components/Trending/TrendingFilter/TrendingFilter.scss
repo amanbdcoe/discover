@@ -1,0 +1,41 @@
+.filter-container {
+  h3 {
+    font-size: 24px;
+    text-align: center;
+    color: #00a4ff;
+  }
+
+  .form-container {
+    form {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin-top: 60px;
+      .select + .select {
+        margin-top: 20px;
+      }
+      .select {
+        margin: 0 auto;
+        background: #151515;
+        color: white;
+        border-radius: 3px;
+        border: 2px solid gray;
+        height: 45px;
+        padding: 5px 10px;
+        font-size: 20px;
+        width: 300px;
+      }
+
+      button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 18px;
+        background: #00a4ff;
+        outline: none;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+
+}

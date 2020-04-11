@@ -1,13 +1,5 @@
 .popular-container {
   min-height: 100vh;
   display: flex;
-  .main-container {
-    flex-grow: 1;
-    padding: 10px 20px;
-  }
-
-  .sidebar-container {
-    background: white;
-    width: 350px;
-  }
+  @import "../../scss/layout.scss";
 }

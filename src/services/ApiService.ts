@@ -15,7 +15,7 @@ class ApiService {
 
   get<T>(uri: string, queryParams?: { [key: string]: any }, responseType?: any): Promise<T> {
     return this.axiosInstance.get(this._fullyQualifiedUri(uri), {
-      params: queryParams,
+      params: this._getQueryParams(queryParams),
       headers: this._getHttpHeaders(),
       responseType: responseType || "json"
     }).then(response => response.data)
@@ -34,6 +34,13 @@ class ApiService {
       "Accept": "application/json",
       ...additionalHeaders
     };
+  }
+
+  private _getQueryParams(queryParams?: {[key: string]: string}) {
+    return {
+      "api_key": process.env.REACT_APP_API_KEY,
+      ...queryParams
+    }
   }
 
   private _fullyQualifiedUri(uri: string) {
